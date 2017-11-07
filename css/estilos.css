@@ -1,0 +1,364 @@
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../imgs/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  position: relative;
+}
+
+header h1 {
+  font-size: 4.5em;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 5%;
+  color: #000;
+  font-family: "Fipps";
+  text-align: center;
+}
+
+#menu {
+  padding: 2%;
+  width: 100%;
+  padding-top: 0;
+  font-size: 1.8em;
+  line-height: normal;
+  font-family: "Fipps";
+  text-align: center;
+  background-color: none;
+}
+
+#modal-cred {
+  padding: 4%;
+  line-height: normal;
+  font-family: "Times New Roman";
+  font-size: .9em;
+  text-align: left;
+  color: #000;
+  background-image: linear-gradient(#C0C0C0,#D3D3D3,#DCDCDC,#DCDCDC,#D3D3D3,#C0C0C0);
+}
+
+#modal-cred h2 {
+  font-family: "Fipps";
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  color: #000;
+}
+
+#alice {
+  animation: aliceCorrendo 13s linear 4s infinite;
+}
+
+#dornelas {
+  animation: dornelasCorrendo 11s linear 4s infinite;
+}
+
+#brandao {
+  animation: brandaoCorrendo 10s linear 0s infinite;
+}
+
+#babi {
+  animation: babiCorrendo 12s linear 0s infinite;
+}
+
+#ul-botoes {
+  display: inline;
+}
+
+#instrucoes, #hist {
+  background-image: linear-gradient(#c0c0c0, #d3d3d3, #dcdcdc, #dcdcdc, #d3d3d3, #c0c0c0);
+  text-align: center;
+  border-radius: 4%;
+  box-shadow: 10px 10px 5px #888;
+  margin: 10%;
+  width: 50%;
+  padding: 1em;
+  padding-bottom: 2em;
+  font-family: "Emotion";
+}
+
+#hist {
+  margin-top: 10%;
+}
+
+#prox {
+  background-color: #A9A9A9 ;
+  border-radius: 20%;
+  padding: 0.5em;
+  box-shadow: 10px 10px 5px #888888;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+}
+
+#prox:hover {
+	position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#lista {
+  text-align: justify;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.personagens {
+  position: absolute;
+  bottom: 2.5em;
+  height: 14em;
+  margin-top: 1em;
+  transform: translateX(200em);
+}
+
+.invisivel {
+  display: none;
+}
+
+.modal {
+  width: 75%;
+}
+
+.modal-close {
+  margin-top: 2%;
+  padding: .25em;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  position: absolute;
+  right: 5%;
+  top: .5%;
+  cursor: pointer;
+  font-family: "Fipps";
+}
+
+.nome {
+  font-family: "Super Nintendo";
+  font-size: 1.5em;
+  list-style-type: none;
+  margin-top: .5em;
+}
+
+.botoes-menu {
+  color: #000;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.botoes-menu:hover {
+  cursor: pointer;
+}
+
+.objetos {
+  position: absolute;
+  transform: translateY(200em);
+}
+
+.botoes-creditos, .img-botoes {
+	border-radius: 40%;
+  height: 14em;
+  padding: 1em;
+}
+
+.botoes-creditos {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0.1em;
+  margin-left: 0.1em;
+}
+
+.botoes-creditos:hover {
+	position: relative;
+  left: .5em;
+  top: .5em;
+}
+
+.img-botoes {
+  float: left;
+  margin-right: 2%;
+}
+
+.visivel {
+  display: inline-block;
+  font-family: "Times New Roman";
+}
+
+.voltar {
+  background-color: #989898;
+  margin-bottom: 0.1em;
+  margin-left: 0.1em;
+  border-radius: 50%;
+  padding: 0 1em;
+  margin: 1em;
+  transition: 500ms;
+}
+
+.bios {
+  margin-top: 1em;
+}
+
+@keyframes aliceCorrendo {
+  from { transform: translateX(200em); }
+  to { transform: translateX(-100em); }
+}
+
+@keyframes babiCorrendo {
+  from { transform: translateX(-120em); }
+  to { transform: translateX(180em); }
+}
+
+@keyframes dornelasCorrendo {
+  from { transform: translateX(-130em); }
+  to { transform: translateX(170em); }
+}
+
+@keyframes brandaoCorrendo {
+  from { transform: translateX(190em); }
+  to { transform: translateX(-110em); }
+}
+
+@font-face {
+  font-family: "Zelda";
+  src: url("../fonts/zelda.ttf");
+}
+@font-face {
+  font-family: "Emotion";
+  src: url("../fonts/emotion.otf");
+}
+@font-face {
+  font-family: "Super Nintendo";
+  src: url("../fonts/super-nintendo.ttf");
+}
+@font-face {
+  font-family: "Fipps";
+  src: url("../fonts/fipps.otf");
+}
+@font-face {
+  font-family: "Gabrielle";
+  src: url("../fonts/gabrielle.ttf");
+}
+
+@media (max-width: 320px) {
+  header h1 { font-size: 2.2em; }
+  #menu { font-size: 1.2em; }
+  #modal-cred { font-size: .6em; }
+  #modal-cred h2 { font-size: 1.5em; }
+  .modal-close { font-size: 1em; }
+  .personagens { height: 8em;  }
+}
+
+@media (min-width: 321px) and (max-width: 364px) {
+  header h1 { font-size: 2.4em; }
+  #menu { font-size: 1.4em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.1em; }
+  .modal-close { font-size: 1.2em; }
+  .personagens { height: 8em;  }
+}
+
+@media (min-width: 365px) and (max-width: 400px) {
+  header h1 { font-size: 2.6em;}
+  #menu { font-size: 1.4em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.3em; }
+  .modal-close { font-size: 1.2em; }
+  .personagens { height: 9em;  }
+}
+
+@media (min-width: 401px) and (max-width: 480px)  {
+  header h1 { font-size: 2.8em; }
+  #menu { font-size: 1.4em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.4em; }
+  .modal-close { font-size: 1.3em; }
+  .personagens { height: 10em;  }
+}
+
+@media (min-width: 481px) and (max-width: 540px) {
+  header h1 { font-size: 3em;  }
+  #menu { font-size: 1.6em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.4em; }
+  .modal-close { font-size: 1.3em; }
+  .personagens { height: 10em; }
+}
+
+@media (min-width: 541px) and (max-width: 640px) {
+  header h1 { font-size: 3.2em; }
+  #menu { font-size: 1.7em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.5em; }
+  .modal-close { font-size: 1.3em; }
+  .personagens { height: 10em; }
+  .botoes-creditos, .img-botoes { height: 10.5em; padding: .5em; }
+}
+
+@media (min-width: 641px) and (max-width: 740px) {
+  header h1 { font-size: 3.3em;  }
+  #menu { font-size: 1.7em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.5em; }
+  .modal-close { font-size: 1.3em; }
+  .personagens { height: 12em;  }
+  .botoes-creditos, .img-botoes { height: 11em; padding: .6em; }
+}
+
+@media (min-width: 741px) and (max-width: 840px) {
+  header h1 { font-size: 3.4em;  }
+  #menu { font-size: 1.8em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.5em; }
+  .modal-close { font-size: 1.4em; }
+  .personagens { height: 12em; bottom:  }
+  .botoes-creditos, .img-botoes { height: 12em; padding: .7em; }
+}
+
+@media (min-width: 841px) and (max-width: 920px) {
+  header h1 { font-size: 3.5em; }
+  #menu { font-size: 1.6em; }
+  #modal-cred { font-size: 1em; }
+  #modal-cred h2 { font-size: 1.7em; }
+  .modal-close { font-size: 1.4em; }
+  .personagens { height: 12em;  }
+  .botoes-creditos, .img-botoes { height: 12em; padding: .7em; }
+}
+
+@media (min-width: 921px) and (max-width: 1000px) {
+  header h1 { font-size: 3.8em; }
+  #menu { font-size: 1.7em; }
+  #modal-cred { font-size: 1em; }
+  #modal-cred h2 { font-size: 2em; }
+  .modal-close { font-size: 1.5em; }
+  .personagens { height: 12em;  }
+  .botoes-creditos, .img-botoes { height: 13em; padding: .7em; }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  header h1 { font-size: 4em; }
+  #menu { font-size: 1.8em; }
+  #modal-cred { font-size: .8em; }
+  #modal-cred h2 { font-size: 1.6em; }
+  .modal-close { font-size: 1.5em; }
+  .personagens { height: 10em;  }
+  .botoes-creditos, .img-botoes { height: 14em; }
+}
+
+@media (min-width: 2560px) {
+  header h1 { font-size: 8em; }
+  #menu { font-size: 3.5em; }
+  #modal-cred { font-size: 1em; }
+  #modal-cred h2 { font-size: 1.5em; }
+  .modal-close { font-size: 2em; }
+  .personagens { height: 15em;  }
+}

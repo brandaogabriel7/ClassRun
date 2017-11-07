@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imgs/icon.png">
+    <title>Class Run</title>
+  </head>
+  <body>
+    <header class="geral">
+      <h1>Class Run</h1>
+    </header>
+    <main class="center-block geral">
+      <div id="containerGame">
+
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a id="playButtonMenu" class="waves-effect waves-light botoes-menu">Play</a></li>
+          <li><a class="waves-effect waves-light modal-trigger botoes-menu" href="#modal-cred">Créditos</a></li>
+            <div id="modal-cred" class="modal">
+              <div class="modal-content">
+                <span class="modal-close">x</span>
+                <h2>Créditos</h2>
+                <ul id="ul-botoes">
+                  <li><button id="botao-alice" class="botoes-creditos left"><img src="imgs/alice.jpg" class="img-botoes"></button></li>
+                  <li><button id="botao-dornelas" class="botoes-creditos right"><img src="imgs/dornelas.jpg" class="img-botoes"></button></li>
+                  <li><button id="botao-babi" class="botoes-creditos left"><img src="imgs/babi.jpg" class="img-botoes"></button></li>
+                  <li><button id="botao-brandao" class="botoes-creditos right"><img src="imgs/brandao.jpg" class="img-botoes"></button></li>
+                </ul>
+                <section class="">
+                  <article class="invisivel bios" id="alice-bio">
+                    <img src="imgs/alice.jpg" class="img-botoes">
+                    <p class="nome">Alice Guadalupe Venini</p>
+                    <ul>
+                      <li>Futura dona de um pub em uma cidade turística da europa.</li>
+                      <li>Grande fã de todo tipo de expressão artística.</li>
+                      <li>Conhecida como rainha do drama pelos mais íntimos e a cantora da turma do 1º ano de Informática 2017.</li>
+                      <li>Responsável pela ideia do jogo, estilização da janela modal e pelos personagens e objetos do jogo.</li>
+                    </ul>
+                    <button class="voltar right">←</button>
+                  </article>
+                  <article class="invisivel bios" id="dornelas-bio">
+                    <img src="imgs/dornelas.jpg" class="img-botoes">
+                    <p class="nome">Anna Clara Dornelas Rios</p>
+                    <ul>
+                      <li>Futura pesquisadora doutorada em Antropologia.</li>
+                      <li>Grande fã de música Indie/Folk e de séries de TV.</li>
+                      <li>Conhecida como a dorminhoca da turma do 1º ano de Informática 2017.</li>
+                      <li>Responsável pelas ideias e design da página inicial e do mapa do jogo.</li>
+                    </ul>
+                    <button class="voltar right">←</button>
+                  </article>
+                  <article class="invisivel bios" id="babi-bio">
+                    <img src="imgs/babi.jpg" class="img-botoes">
+                    <p class="nome">Barbara Martins Ribeiro Duarte</p>
+                    <ul>
+                      <li>Futura professora com doutorado em matemática computacional.</li>
+                      <li>A maior fã de livros/filmes/séries de romance água com açúcar que você respeita.</li>
+                      <li>Conhecida como sobrevivente do Barreiro e megafone da turma do 1º ano de Informática 2017.</li>
+                      <li>Responsável pela montagem da página inicial e do mapa do jogo, além da implementação deste modal de créditos e toda a responsividade do site.</li>
+                    </ul>
+                    <button class="voltar right">←</button>
+                  </article>
+                  <article class="invisivel bios" id="brandao-bio">
+                    <img src="imgs/brandao.jpg" class="img-botoes">
+                    <p class="nome">Gabriel Silva Brandao</p>
+                    <ul>
+                      <li>Futuro programador/músico, além de ser praticante de artes marciais.</li>
+                      <li>Inspirador para a criação do verbo "brandar" === "lerdar"; (patente-pendente).</li>
+                      <li>Conhecido como o prodígio e músico da turma do 1º ano de Informática 2017.</li>
+                      <li>Responsável pela ideia e montagem de todo o jogo em si.</li>
+                    </ul>
+                    <button class="voltar right">←</button>
+                  </article>
+                </section>
+              </div>
+            </div>
+          <li><a class="waves-effect waves-light modal-trigger botoes-menu" id="carregar">Carregar jogo</a></li>
+        </ul>
+      </div>
+    </main>
+    <div class="geral">
+      <img id="alice" class="personagens" src="imgs/characters/alice.gif" alt="Personagem da Alice">
+      <img id="babi" class="personagens" src="imgs/characters/Barbara.gif" alt="Personagem da Babi">
+      <img id="brandao" class="personagens" src="imgs/characters/brands.gif" alt="Personagem do Brandão">
+      <img id="dornelas" class="personagens" src="imgs/characters/dornelas.gif" alt="Personagem da Dornelas">
+    </div>
+    <div class="invisivel">
+      <img src="imgs/objetos/baralho.png" class="objetos" alt="">
+      <img src="imgs/objetos/borracha.png" class="objetos" alt="">
+      <img src="imgs/objetos/caderno.png" class="objetos" alt="">
+      <img src="imgs/objetos/cama.png" class="objetos" alt="">
+      <img src="imgs/objetos/caneta.png" class="objetos" alt="">
+      <img src="imgs/objetos/dinheiro.png" class="objetos" alt="">
+      <img src="imgs/objetos/lapis.png" class="objetos" alt="">
+      <img src="imgs/objetos/videogame.png" class="objetos" alt="">
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/phaser.js"></script>
+    <!-- <script src="js/game.js"></script> -->
+  </body>
+</html>
